@@ -8,7 +8,7 @@ const page = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setTime(new Date().toLocaleString());
+            setTime(new Date().toLocaleTimeString());
         }, 1000);
 
         return () => clearInterval(interval);
